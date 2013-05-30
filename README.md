@@ -1,5 +1,5 @@
-Rails приложение моего сайта
+## My Rails site
 =========
 
-> Rails 4
-> Bootstrap 3
+> Rails 4.
+> Bootstrap 3.
