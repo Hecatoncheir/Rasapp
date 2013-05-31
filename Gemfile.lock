@@ -1,3 +1,9 @@
+GIT
+  remote: git@github.com:FriendlyId/friendly_id.git
+  revision: 5e6b292bb39ef5dbbe43ccbd983ff160a9408218
+  specs:
+    friendly_id (5.0.0.alpha1)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -110,6 +116,7 @@ PLATFORMS
 
 DEPENDENCIES
   coffee-rails (~> 4.0.0)
+  friendly_id (~> 5.0.0.alpha1)!
   jbuilder (~> 1.0.1)
   jquery-rails
   rails (= 4.0.0.rc1)

@@ -43,3 +43,5 @@ end
 
 # Use debugger
 # gem 'debugger', group: [:development, :test]
+
+gem "friendly_id", "~> 5.0.0.alpha1", git: 'git@github.com:FriendlyId/friendly_id.git'
