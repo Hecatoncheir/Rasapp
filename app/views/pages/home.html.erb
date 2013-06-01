@@ -1,4 +1,108 @@
 <% title("Добро пожаловать") %>
 <%= stylesheet_link_tag("pages") %>
-<%= javascript_include_tag("pages") %>
 
+
+
+<div class="container">
+	
+	<div class="row main">
+		<div class="col col-lg-12">
+			<div class="row">
+			  <div class="col col-lg-2 logotip"><h2 class="text-center"><%= link_to 'Rasart', root_path %></h2></div>
+			  <div class="col col-lg-6 hidden-sm entry"><h4 class="text-left">Все внимание на картинки, они мне нравятся...</h4></div>
+			  
+			  <div class="col col-lg-4 navigation">
+				  <a href="#" class="next"></a>
+				  <nav class="pull-right">
+					  <a href="#" class="active"><span>1</span></a>
+					  <a href="#"><span>2</span></a>
+					  <a href="#"><span>3</span></a>
+					  <a href="#"><span>4</span></a>
+					  <a href="#"><span>5</span></a>
+				  </nav>
+			  </div>
+			  
+			</div>
+		</div>
+		
+		
+		<div class="col col-lg-12 projects">
+			<div class="row">
+				
+				<div class="col col-lg-2 project">
+					<div class="preview">
+						<%= link_to (image_tag 'bg.jpg', class: "img-rounded") %>
+						<div class="clear"></div>
+					</div>
+					<div class="hidden-sm info">
+						<h6>Заголовок</h6>
+					</div>
+				</div>
+				
+				<div class="col col-lg-2 project">
+					<div class="preview">
+						<%= link_to (image_tag 'bg.jpg', class: "img-rounded") %>
+						<div class="clear"></div>
+					</div>
+					<div class="hidden-sm info">
+						<h6>Заголовок</h6>
+					</div>
+				</div>
+				
+				<div class="col col-lg-2 project">
+					<div class="preview">
+						<%= link_to (image_tag 'bg.jpg', class: "img-rounded") %>
+						<div class="clear"></div>
+					</div>
+					<div class="hidden-sm info">
+						<h6>Заголовок</h6>
+					</div>
+				</div>
+			
+				<div class="col col-lg-2 project">
+					<div class="preview">
+						<%= link_to (image_tag 'bg.jpg', class: "img-rounded") %>
+					</div>
+					<div class="hidden-sm info">
+						<h6>Заголовок</h6>
+					</div>
+				</div>
+			
+				<div class="col col-lg-2 project">
+					<div class="preview">
+						<%= link_to (image_tag 'bg.jpg') %>
+					</div>
+					<div class="hidden-sm info">
+						<h6>Заголовок</h6>
+					</div>
+				</div>
+				
+				
+			</div>
+		</div>
+
+	</div>
+	
+	<div class="row about">
+	  <div class="col col-lg-12">
+	    <div class="row">
+	      <div class="col col-lg-7 about_me">
+			  <div class="row">
+			    <div class="col col-lg-8 me">
+					<p class="text-left"><h1><span class="name">Vitaliy Vostrikov</span></h1>
+					<h4>Front-end developer, Graphic designer</h4>
+					</p>
+				</div>
+			    <div class="col col-lg-4">6</div>
+			  </div>
+	      </div>
+	      <div class="col col-lg-4 col-offset-1 about_tech">
+	        Level 2: 6 columns
+	      </div>
+	    </div>
+	  </div>
+	</div>
+
+</div>
+
+<!-- <%= javascript_include_tag("pages") %> -->

@@ -1,5 +1,230 @@
 body {
-	background: url(<%= image_path('bg.png') %>) center center no-repeat;
+	background: url(<%= image_path('bg.jpg') %>) center center no-repeat;
 	background-attachment:fixed;
-	background-position:center; 
+	background-position:center;
+}
+
+@font-face {
+	font-family: 'Agora';
+	src: url(<%= font_path('agora/Agora.ttf') %>) format('truetype');
+}
+
+a {color:#fff;}
+a:hover {color:#fff;}
+
+#frame_page {position:relative;}
+#frame_page div {position:fixed; z-index:9;}
+	#frame_top {
+		top:0;
+		height:15px;
+		width:100%;
+		background: url(<%= image_path('frame/frame_top.png') %>) repeat-x top center;
+	}
+	#frame_right {
+		right:0;
+		height:100%;
+		width:15px;
+		background: url(<%= image_path('frame/frame_right.png') %>) repeat-y center right;
+	}
+	#frame_bottom {
+		bottom:0;
+		height:15px;
+		width:100%;
+		background: url(<%= image_path('frame/frame_bottom.png') %>) repeat-x bottom center;
+	}
+	
+	#frame_left {
+		left:0;
+		height:100%;
+		width:15px;
+		background: url(<%= image_path('frame/frame_left.png') %>) repeat-y center left;
+	}
+	
+.container {
+	padding:20px;
+}
+
+	.main {
+		background:#fff;
+		margin-top:15%;
+	}
+	
+		.main .col {
+			background:#37353b;
+			color:#fff;
+		}
+	
+	.logotip {
+		background:#cc4939 !important;
+		font-family: 'Cuprum-Bold', sans-serif;
+		text-transform: uppercase;
+		color:#fff;
+		position: relative;
+	}
+	
+	.logotip:after, .logotip:before {
+		top: 100%;
+		border: solid transparent;
+		z-index:6;
+		content: " ";
+		height: 0;
+		width: 0;
+		position: absolute;
+		pointer-events: none;
+	}
+
+	.logotip:after {
+		border-color: rgba(196, 147, 9, 0);
+		border-top-color: #cc4939;
+		border-width: 12px;
+		left: 50%;
+		margin-left: -12px;
+	}
+	.logotip:before {
+		border-color: rgba(204, 73, 57, 0);
+		border-top-color: #cc4939;
+		border-width: 15px;
+		left: 50%;
+		margin-left: -15px;
+	}
+	
+	.entry {
+		font-family: 'Cuprum-Regular', sans-serif;
+	}
+	
+		.entry h4 {
+			background: url(<%= image_path('entry_arrows.png') %>)  no-repeat left;
+			display:block;
+			height:45px;
+			padding:12px 0 0 0;
+		}
+	.navigation nav {
+		padding:20px 0;
+	}
+		
+		.navigation nav a {
+			background:#656565;
+			border: 2px solid #7f7f80;
+			border-radius: 500px;
+			text-align:center;
+			padding:3px 6px;
+			font-size:8px;
+			vertical-align:middle;
+			margin-right:6px;
+		}
+		
+		.navigation nav .active {
+			padding:6px 10px;
+			font-size:16px;
+			border-color:#fff;
+		}
+		
+		.navigation nav a span {visibility:hidden;}
+		
+		.navigation nav .active span {visibility:visible;}
+		
+		.next {
+			display:block;
+			background: url(<%= image_path('navigation_next.png') %>)  no-repeat right;
+			width:22px;
+			height:32px;
+			float:right;
+			margin-right:-16px;
+			margin-left:16px;
+			margin-top:16px;
+		}
+		
+		.projects {
+			background:#f6f5f1 !important;
+			padding:20px;
+			padding-left:75px;
+			color:#37353b !important;
+		}
+		
+			.project {
+				display:block;
+				padding:10px;
+				margin:10px;
+				float:left;
+				width:180px;
+				-webkit-border-radius: 6px;
+				border-radius: 6px;
+				background:#ececec !important;
+				color:#37353b !important;
+				-webkit-transition: all 100ms ease-in-out;
+				-moz-transition: all 100ms ease-in-out;
+				-ms-transition: all 100ms ease-in-out;
+				-o-transition: all 100ms ease-in-out;
+				transition: all 100ms ease-in-out;
+			}
+			
+			.project:hover {
+				background:#37353b !important;
+				color:#ececec !important;
+			}
+			
+			.preview {
+				float:left;
+			}
+			
+			.project .info {
+				display:block;
+				width:160px;
+				float:left;
+				clear:left;
+				padding:0;
+			}
+		
+
+			.project img {
+				width:160px !important;
+				height:120px;
+				max-height:120px;
+			}
+			
+	.about {
+		margin-top:35px;
+		margin-bottom:15px;
+	}
+	
+		.about_me {
+			margin-bottom:20px	;
+			min-height:65px;
+			background:#37353b url(<%= image_path('about_me_footer.png') %>) no-repeat left bottom;
+			padding-bottom:70px;
+			color:#fff;
+			font-family: 'Cuprum-Bold', sans-serif;
+		}
+		
+			.me {font-family: 'Agora';}
+			.me .name {
+				text-transform:uppercase;
+				color:#cc4939;
+			}
+		
+		.about_tech {
+			background:#37353b;
+		}
+		
+
+@media screen and (max-width: 400px) {
+  @-ms-viewport {
+    width: 320px;
+  }
+  
+	.logotip:after, .logotip:before {
+		display:none;
+	}
+	
+	.projects {padding-left:40px;}
+	
+	.project {
+		width:140px;
+		height:140px;
+		margin:5px;
+	}
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .projects {padding-left:60px;}
 }

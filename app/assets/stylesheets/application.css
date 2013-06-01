@@ -2,3 +2,11 @@
  *= require_self
  *= require bootstrap
  */
+
+body {font-family: 'Cuprum', sans-serif;}
+
+a:hover {
+	text-decoration:none !important;
+}
+
+.clear {clear:both;}
