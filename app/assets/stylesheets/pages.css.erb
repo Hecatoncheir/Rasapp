@@ -192,10 +192,12 @@ a:hover {color:#fff;}
 			margin-bottom:20px	;
 			min-height:65px;
 			background:#37353b url(<%= image_path('about_me_footer.png') %>) no-repeat left bottom;
-			padding-bottom:70px;
+			padding-bottom:60px;
 			color:#fff;
+			position:relative;
 			font-family: 'Cuprum-Bold', sans-serif;
 		}
+	
 		
 			.me {font-family: 'Agora';}
 			.me .name {
@@ -209,16 +211,57 @@ a:hover {color:#fff;}
 				width:167px;
 				height:32px;
 				float:right;
-				margin:20px -16px 0 0;
+				margin:20px -16px 10px 0;
 				padding-left:30px;
 				padding-top:6px;
 			}
+			
+			.read_blog:hover{color:#37353b;}
 		
-			.social {
-				padding:15px;
+			.social {padding:15px;}
+			
+			.social li {
+				list-style:none;
+				margin-left:-25px;
+				margin-bottom:5px;
 			}
+			
+			.social li a {padding-left:35px;}
 		
-		
+			.social a:hover {
+				color:#cc4939;
+			}
+			
+				.social_icons {
+					display:block;
+					width:18px;
+					height:18px;
+					background: url(<%= image_path('social_icons.png') %>);
+					background-position:no-repeat;
+				}
+				
+				.icon_be {background-position:0 0;}
+				.icon_be:hover{background-position:0 -18px;}
+				
+				.icon_mail {background-position:-18px 0;}
+				.icon_mail:hover{background-position:-18px -18px;}
+				
+				.icon_fb {background-position:-36px 0;}
+				.icon_fb:hover{background-position:-36px -18px;}
+				
+				.icon_gp {background-position:-54px 0;}
+				.icon_gp:hover{background-position:-54px -18px;}
+				
+				
+				
+				.about_site {
+					position:absolute;
+					right:20px;
+					bottom:0px;
+					font-family:Cuprum-Regular;
+					background:url(<%= image_path('ruby.png') %>) no-repeat 0 12px;
+					padding-left:21px;
+				}
 		
 		.about_tech {
 			background:#37353b;
