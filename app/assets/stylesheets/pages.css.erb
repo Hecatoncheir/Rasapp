@@ -263,9 +263,30 @@ a:hover {color:#fff;}
 					padding-left:21px;
 				}
 		
-		.about_tech {
+		.last_posts {
 			background:#37353b;
+			color:#fff;
+			padding-top:20px;
+			position:relative;
 		}
+		
+			.last_posts .new {
+				display:block;
+				width:60px;
+				height:46px;
+				position:absolute;
+				top:0;
+				right:0;
+				background:url(<%= image_path('latest_posts.png') %>) no-repeat;
+			}
+		
+			.last_posts blockquote p {font-size:14px;}
+			
+			.last_posts blockquote a {padding:2px 4px;}
+			.last_posts blockquote a:hover {
+				background:#cc4939;
+			}
+		
 		
 		
 
