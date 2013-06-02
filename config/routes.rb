@@ -1,12 +1,13 @@
 Rasapp::Application.routes.draw do
-  
-  root to: 'pages#home'
-  
-  resources :pages
-  get ':id', to: 'pages#show'
 
+  root to: 'pages#home'
+  resources :pages
+
+  resources :projects
+  
   namespace :admin do
     get '', to: 'dashboard#index', as: '/'
+    resources :projects
   end
   
   
