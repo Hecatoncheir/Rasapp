@@ -98,6 +98,7 @@ a:hover {color:#fff;}
 			height:45px;
 			padding:12px 0 0 0;
 		}
+		
 	.navigation nav {
 		padding:20px 0;
 	}
@@ -201,10 +202,28 @@ a:hover {color:#fff;}
 				text-transform:uppercase;
 				color:#cc4939;
 			}
+			
+			.read_blog{
+				display:block;
+				background: url(<%= image_path('read_blog.png') %>) no-repeat right center;
+				width:167px;
+				height:32px;
+				float:right;
+				margin:20px -16px 0 0;
+				padding-left:30px;
+				padding-top:6px;
+			}
+		
+			.social {
+				padding:15px;
+			}
+		
+		
 		
 		.about_tech {
 			background:#37353b;
 		}
+		
 		
 
 @media screen and (max-width: 400px) {
@@ -223,6 +242,31 @@ a:hover {color:#fff;}
 		height:140px;
 		margin:5px;
 	}
+}
+
+@media screen and (max-width: 480px) {
+	.projects {padding-left:50px;}
+}
+
+@media screen and (max-width: 640px) {
+  
+	.projects {padding-left:70px;}
+	
+	.project {
+		width:160px;
+		margin:5px;
+	}
+}
+
+@media screen and (max-width: 768px) {
+  .logotip {
+	  padding-left:10px;
+  }
+  
+	.entry h4 {
+		background: none;
+	}
+
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
