@@ -12,3 +12,56 @@ a:hover {
 
 .clear {clear:both;}
 
+.white_page {
+	background: #fff;
+	padding:20px;
+}
+
+
+@media screen and (max-width: 400px) {
+  @-ms-viewport {
+    width: 320px;
+  }
+  
+	.logotip:after, .logotip:before {
+		display:none;
+	}
+	
+	.projects {padding-left:40px;}
+	
+	.project {
+		width:140px;
+		height:140px;
+		margin:5px;
+	}
+}
+
+@media screen and (max-width: 480px) {
+	.projects {padding-left:50px;}
+}
+
+@media screen and (max-width: 640px) {
+  
+	.projects {padding-left:70px;}
+	
+	.project {
+		width:160px;
+		margin:5px;
+	}
+}
+
+@media screen and (max-width: 768px) {
+  .logotip {
+	  padding-left:10px;
+  }
+  
+	.entry h4 {
+		background: none;
+	}
+
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .projects {padding-left:60px;}
+}
+

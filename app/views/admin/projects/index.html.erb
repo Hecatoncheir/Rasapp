@@ -1,0 +1,25 @@
+<% title('Админка для проектов')%>
+
+<%= stylesheet_link_tag('admin/dashboard') %>
+
+<div class="row main">
+	
+	<%= render 'admin/dashboard/header' %>
+
+	<div class="col col-lg-12">
+		<div class="row">
+			<div class="white_page">
+				
+				<% if @note %>
+				<div class="alert">
+				  <button type="button" class="close" data-dismiss="alert">&times;</button>
+				  <strong>Сообщение:</strong><%= @note %>
+				</div>
+					
+				<% end %>
+			
+			</div>
+		</div>
+	</div>
+	
+</div>
