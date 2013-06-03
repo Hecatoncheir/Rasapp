@@ -1,6 +1,7 @@
 /*
  *= require_self
  *= require bootstrap
+ *= require base
  */
 
 body {font-family: 'Cuprum', sans-serif;}
@@ -10,3 +11,4 @@ a:hover {
 }
 
 .clear {clear:both;}
+
