@@ -1,5 +1,6 @@
 <% title("Добро пожаловать") %>
 <%= stylesheet_link_tag("pages") %>
+<%= stylesheet_link_tag("projects") %>
 
 
 
@@ -26,58 +27,9 @@
 		</div>
 		
 		
-		<div class="col col-lg-12 projects">
-			<div class="row">
-				
-				<div class="col col-lg-2 project">
-					<div class="preview">
-						<%= link_to (image_tag 'bg.jpg', class: "img-rounded") %>
-						<div class="clear"></div>
-					</div>
-					<div class="hidden-sm info">
-						<h6>Заголовок</h6>
-					</div>
-				</div>
-				
-				<div class="col col-lg-2 project">
-					<div class="preview">
-						<%= link_to (image_tag 'bg.jpg', class: "img-rounded") %>
-						<div class="clear"></div>
-					</div>
-					<div class="hidden-sm info">
-						<h6>Заголовок</h6>
-					</div>
-				</div>
-				
-				<div class="col col-lg-2 project">
-					<div class="preview">
-						<%= link_to (image_tag 'bg.jpg', class: "img-rounded") %>
-						<div class="clear"></div>
-					</div>
-					<div class="hidden-sm info">
-						<h6>Заголовок</h6>
-					</div>
-				</div>
-			
-				<div class="col col-lg-2 project">
-					<div class="preview">
-						<%= link_to (image_tag 'bg.jpg', class: "img-rounded") %>
-					</div>
-					<div class="hidden-sm info">
-						<h6>Заголовок</h6>
-					</div>
-				</div>
-			
-				<div class="col col-lg-2 project">
-					<div class="preview">
-						<%= link_to (image_tag 'bg.jpg') %>
-					</div>
-					<div class="hidden-sm info">
-						<h6>Заголовок</h6>
-					</div>
-				</div>
-				
-				
+		<div class="col col-lg-12">
+			<div class="row projects">
+				<%= render 'projects/projects'%>
 			</div>
 		</div>
 

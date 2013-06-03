@@ -7,7 +7,7 @@ gem 'rails', '4.0.0.rc1'
 gem 'sqlite3'
 
 # Use SCSS for stylesheets
-gem 'sass-rails', '~> 4.0.0.rc1'
+# gem 'sass-rails', '~> 4.0.0.rc1'
 
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
@@ -45,3 +45,4 @@ end
 # gem 'debugger', group: [:development, :test]
 
 gem "friendly_id", "~> 5.0.0.alpha1", git: 'git@github.com:FriendlyId/friendly_id.git'
+gem 'attached'
